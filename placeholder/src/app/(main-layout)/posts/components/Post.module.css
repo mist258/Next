@@ -1,0 +1,41 @@
+.Post {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.Post:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.Title {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.Body {
+  margin: 0;
+  color: #444;
+  line-height: 1.4;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  padding: 16px;
+}

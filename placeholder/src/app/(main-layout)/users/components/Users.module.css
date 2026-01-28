@@ -1,0 +1,44 @@
+.UserCard {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.UserCard:hover {
+  transform: scale(1.02);
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.Name {
+  margin: 0 0 8px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.Email {
+  margin: 0 0 12px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.Link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+}
+
+.Link:hover {
+  text-decoration: underline;
+}

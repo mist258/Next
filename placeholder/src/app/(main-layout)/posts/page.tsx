@@ -1,17 +1,15 @@
 import { postService } from "@/app/services/postService";
-import { FC, PropsWithChildren} from "react";
+import { FC, PropsWithChildren } from "react";
 import { Posts } from "./components/allPosts";
 
+const PostsPage = async () => {
+  const { data } = await postService.getAll();
 
-const PostsPage = async() => {
-
-    const {data} = await postService.getAll()
-
-    return (
-        <div>
-            <Posts posts={data}/>
-        </div>
-    );
+  return (
+    <div>
+      <Posts posts={data} />
+    </div>
+  );
 };
 
-export default PostsPage
+export default PostsPage;

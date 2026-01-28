@@ -1,4 +1,4 @@
-.header {
+.Header {
   position: fixed;
   top: 0;
   left: 0;
@@ -15,22 +15,24 @@
   z-index: 1000;
 }
 
-.nav {
+.Nav {
   display: flex;
-  gap: 32px; 
+  gap: 32px;
 }
 
-.navLink {
+.NavLink {
   color: white;
   text-decoration: none;
   font-weight: 600;
-  font-size: 35px;          
-  padding: 12px 500px;       
+  font-size: 35px;
+  padding: 12px 500px;
   border-radius: 8px;
-  transition: background-color 0.2s ease, transform 0.15s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease;
 }
 
-.navLink:hover {
+.NavLink:hover {
   background-color: rgba(255, 255, 255, 0.25);
   transform: translateY(-1px);
 }

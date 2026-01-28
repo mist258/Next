@@ -1,20 +1,17 @@
 import Link from "next/link";
-import css from './Header.module.css'
+import css from "./Header.module.css";
 
 export const Header = () => {
   return (
-    <header className={css.header}>
-      <nav className={css.nav}>
-        
-        <Link href="/users" className={css.navLink}>
+    <header className={css.Header}>
+      <nav className={css.Nav}>
+        <Link href="/users" className={css.NavLink}>
           Users
         </Link>
-        
-        <Link href="/posts" className={css.navLink}>
+
+        <Link href="/posts" className={css.NavLink}>
           Posts
         </Link>
-
-      
       </nav>
     </header>
   );

@@ -3,14 +3,15 @@ import { FC, PropsWithChildren } from "react";
 import { User } from "./user";
 
 interface IProps extends PropsWithChildren {
-    users:IUser[]
-
+  users: IUser[];
 }
 
-export const AllUsers: FC<IProps> = ({users}) => {
-    return (
-        <div>
-            {users.map(user => <User key={user.id} user={user}/>)}
-        </div>
-    );
+export const AllUsers: FC<IProps> = ({ users }) => {
+  return (
+    <div>
+      {users.map((user) => (
+        <User key={user.id} user={user} />
+      ))}
+    </div>
+  );
 };
