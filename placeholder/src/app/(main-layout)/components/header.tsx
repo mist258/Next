@@ -12,6 +12,9 @@ export const Header = () => {
         <Link href="/posts" className={css.NavLink}>
           Posts
         </Link>
+        <Link href="/about" className={css.NavLink}>
+          About
+        </Link>
       </nav>
     </header>
   );

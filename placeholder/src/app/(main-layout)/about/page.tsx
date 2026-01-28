@@ -1,4 +1,6 @@
 import css from "./About.module.css";
+import Link from "next/link";
+
 const AboutPage = () => {
   return (
     <div className={css.About}>
